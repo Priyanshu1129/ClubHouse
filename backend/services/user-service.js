@@ -6,7 +6,9 @@ class UserService {
     }
 
     async createUser(data) {
+        console.log("create user", data)
         const user = await UserModel.create(data);
+        console.group('created', user)
         return user;
     }
 }
