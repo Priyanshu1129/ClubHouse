@@ -12,7 +12,7 @@ const ACTIONS = require('./actions');
 
 const io = require('socket.io')(server, {
     cors: {
-        origin: "*" ,
+        origin: [process.env.FORNT_URL] ,
         methods: ['GET', 'POST'],
     },
 });
