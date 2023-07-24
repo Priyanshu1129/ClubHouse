@@ -12,7 +12,7 @@ const ACTIONS = require('./actions');
 
 const io = require('socket.io')(server, {
     cors: {
-        Access-Control-Allow-Origin: "*" ,
+        origin: "*" ,
         methods: ['GET', 'POST'],
     },
 });
